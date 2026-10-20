@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Gallery | Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">P</span> Pixel Gallery</a>
+    <span class="top-note">A little inspiration, frame by frame</span>
+  </header>
+  <main class="container">
+    <section class="intro">
+      <p class="eyebrow">CURATED COLLECTION</p>
+      <h1>Moments worth <span>looking at.</span></h1>
+      <p class="subhead">Explore a hand-picked collection of landscapes, architecture and everyday details.</p>
+    </section>
+    <nav class="filters" aria-label="Image categories">
+      <button class="filter active" data-filter="all">All photos</button>
+      <button class="filter" data-filter="nature">Nature</button>
+      <button class="filter" data-filter="architecture">Architecture</button>
+      <button class="filter" data-filter="life">Daily life</button>
+    </nav>
+    <section class="gallery" id="gallery" aria-label="Photo gallery"></section>
+    <p class="footer-note">2026 Copy right is reserved · Click any photo to view it larger</p>
+  </main>
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="close" id="closeBtn" aria-label="Close image viewer">×</button>
+    <button class="nav prev" id="prevBtn" aria-label="Previous image">‹</button>
+    <figure><img id="lightboxImg" alt=""><figcaption id="caption"></figcaption></figure>
+    <button class="nav next" id="nextBtn" aria-label="Next image">›</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
